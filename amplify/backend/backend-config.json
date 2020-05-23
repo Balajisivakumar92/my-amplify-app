@@ -1,1 +1,27 @@
-{}
+{
+    "api": {
+        "GraphQLStudyAPI": {
+            "service": "AppSync",
+            "providerPlugin": "awscloudformation",
+            "output": {
+                "authConfig": {
+                    "additionalAuthenticationProviders": [],
+                    "defaultAuthentication": {
+                        "authenticationType": "AMAZON_COGNITO_USER_POOLS",
+                        "userPoolConfig": {
+                            "userPoolId": "authmyamplifyapp817c6e8f"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "auth": {
+        "myamplifyapp817c6e8f": {
+            "service": "Cognito",
+            "providerPlugin": "awscloudformation",
+            "dependsOn": [],
+            "customAuth": false
+        }
+    }
+}

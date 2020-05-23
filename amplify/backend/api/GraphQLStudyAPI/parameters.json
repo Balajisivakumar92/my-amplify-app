@@ -1,0 +1,11 @@
+{
+    "AppSyncApiName": "GraphQLStudyAPI",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": "false",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authmyamplifyapp817c6e8f",
+            "Outputs.UserPoolId"
+        ]
+    }
+}
